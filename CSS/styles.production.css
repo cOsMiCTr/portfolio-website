@@ -444,8 +444,6 @@ footer a{text-decoration: none;}
 .grid > *:nth-child(1) {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
-  grid-column: 3 / 3;
-  grid-row: 1 / 3;
 }
 
 
@@ -456,8 +454,6 @@ footer a{text-decoration: none;}
 .grid > *:nth-child(2) {
   -ms-grid-row: 1;
   -ms-grid-column: 3;
-  grid-column: 3 / 3;
-  grid-row: 1 / 3;
 }
 
 
@@ -468,8 +464,6 @@ footer a{text-decoration: none;}
 .grid > *:nth-child(3) {
   -ms-grid-row: 1;
   -ms-grid-column: 5;
-  grid-column: 3 / 3;
-  grid-row: 1 / 3;
 }
 
 
@@ -480,8 +474,6 @@ footer a{text-decoration: none;}
 .grid > *:nth-child(4) {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
-  grid-column: 3 / 3;
-  grid-row: 1 / 3;
 }
 
 
@@ -492,8 +484,6 @@ footer a{text-decoration: none;}
 .grid > *:nth-child(5) {
   -ms-grid-row: 3;
   -ms-grid-column: 3;
-  grid-column: 3 / 3;
-  grid-row: 1 / 3;
 }
 
 
@@ -504,8 +494,6 @@ footer a{text-decoration: none;}
 .grid > *:nth-child(6) {
   -ms-grid-row: 3;
   -ms-grid-column: 5;
-  grid-column: 3 / 3;
-  grid-row: 1 / 3;
 }
 .grid__item {
   background-color: lightgray;
