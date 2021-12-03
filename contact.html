@@ -17,7 +17,7 @@
     <body>
         <header class="page-header">
             <!-- Add Logo here -->
-            <img src="./img/OnurBaki_Logo.png" alt="logo" class="page-header__item">
+            <img src="./img/OnurBaki_Logo.png" alt="onurbaki-logo" class="page-header__item">
             <nav class="main-navigation page-header__item">
                <ul role="menubar" class="navigation-list">
                   <li role="presentation">
@@ -37,9 +37,9 @@
          </header>
         <!-- My Contact details-->
         <main>
-            <div id="Contact" style="text-align:center">
+            <div class="contact-items">
                         <iframe class="contact-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2429.1767885263134!2d13.444080916653785!3d52.49403934590388!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a84e04365e004d%3A0x2ecb64763f0c5527!2sCareerFoundry%20GmbH!5e0!3m2!1sde!2sde!4v1636193893096!5m2!1sde!2sde" width="600" height="500" style="border:1px;" allowfullscreen="" loading="lazy" role="application"></iframe>
-                        <div class="Address">
+                        <div class="address-field">
                             
                             
                             Lohmühlenstraße 65<br>
@@ -54,36 +54,34 @@
             </div>
 
             <!-- Contact form-->
-            <div class="contact-div"> 
+   
                 <form class="contact-form"> 
-                    <table class="contact-table">
 
 
-                        <tbody class="contact-body" >
-                            <tr>
-                            <td  class="col col-1"><label class="standard-label" for="contact-email" >Enter your email <span class="warning-text">(required)</span></label></td>
-                            <td  class="col col-2"><input type="email" id="contact-email" name="User_Email" value=".@..." required size="30"></td>
-                            </tr>
-                            <tr>
-                            <td  class="col col-1"><label class="standard-label" for="contact-telephone" >Telephone <span class="warning-text">(optional)</span></label></td>
-                            <td  class="col col-2"><input type="tel" id="contact-telephone" name="User_Telephone" pattern="\d{3}[\-]\d{3}[\-]\d{4}"></td>
-                            </tr>
-                            <tr>
-                            <td  class="col col-1"><label class="standard-label" for="contact-message" >Your message <span class="warning-text">(required)</span></label></td>
-                            <td  class="col col-2" ><textarea id="contact-message" name="User_Message" required maxlength="240"></textarea></td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td  class="col col-2" ><button class="sendmessage-button" type="submit">Send message</button></td>
-                            </tr>
-                        </tbody>
 
 
-                    </table>
+                            <div  class="col"><label class="standard-label" for="contact-email" >Enter your email <span class="warning-text">(required)</span></label>
+                                <input type="email" id="contact-email" name="User_Email" placeholder=".@..." required size="30">
+                            </div>
+
+
+                            <div  class="col"><label class="standard-label" for="contact-telephone" >Telephone <span class="warning-text">(optional)</span></label>
+                                <input type="tel" id="contact-telephone" name="User_Telephone" pattern="\d{3}[\-]\d{3}[\-]\d{4}">
+                            </div>
+
+
+                            <div  class="col"><label class="standard-label" for="contact-message" >Your message <span class="warning-text">(required)</span></label>
+                                <textarea id="contact-message" name="User_Message" required maxlength="240"></textarea>
+                            </div>
+
+                            <div  class="col" ><button class="sendmessage-button" type="submit">Send message</button></div>
+                 
+
+
+
                 </form>
 
 
-            </div>
 
             <footer style="text-align:center">
                 <div class="social-media" >

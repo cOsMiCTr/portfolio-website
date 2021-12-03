@@ -23,7 +23,6 @@
 body {
   display: block;
   background-color: var(--primary-color);
-  font-weight: 300;
   font-size: var(--body-font-size);
   line-height: 1.5;
   color: var(--secondary-color);
@@ -357,6 +356,15 @@ button:focus,
   -ms-grid-rows: 300px 20px 300px;
   grid-template-rows: 300px 300px;
   grid-gap: 20px;
+  padding: 1rem;
+}
+
+.grid__item a{
+  color: var(--secondary-color);
+}
+
+section h1 {
+  margin-left: 1rem;
 }
 
 .grid > *:nth-child(1) {
@@ -403,6 +411,7 @@ button:focus,
 
 .grid__item {
   background-color: lightgray;
+  padding: 1rem;
 }
 
 .grid__item:last-child {
@@ -413,33 +422,16 @@ button:focus,
   grid-row: 1 / 3;
 }
 
-@media all and (max-width: 500px) {
-  .grid {
-    -ms-grid-columns: 1fr;
-    grid-template-columns: 1fr;
-  }
+.address-field {
+  font-size: 30px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
 }
 
-@media all and (min-width: 500px) and (max-width: 750px) {
-  .grid {
-    -ms-grid-columns: 1fr 20px 1fr;
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-@media all and (max-width: 750px) {
-  .grid {
-    grid-gap: 10px;
-  }
-
-  .grid__item:last-child {
-    grid-column: auto / auto;
-    grid-row: auto / auto;
-  }
-
-  h1 {
-    font-size: 22px;
-  }
+.contact-items {
+  margin: 0 auto;
+  text-align: center;
 }
 
 .contact-div tr,
@@ -453,28 +445,35 @@ button:focus,
   text-align: left;
 }
 
-.contact-div table {
-  margin: 0 auto;
-}
-
-.contact-table {
+.contact-form {
+  flex-direction: column;
   border: 3px solid black;
   padding: 10px;
   border-radius: var(--border-radius-button);
+  margin: 0 auto;
+  width: 70%;
 }
 
-.contact-table textarea {
+.contact-form div.col {
+  display: flex;
+  justify-content:center;
+  justify-content:space-evenly;
+  margin-top: 10px;
+}
+
+.contact-form textarea {
   border-radius: var(--border-radius-button);
   background-color: transparent;
 }
 
 .contact-map {
+  display: block;
   border-radius: var(--border-radius-button);
+  margin: 0 auto;
 }
 
-.Address {
-  font-size: 30px;
-  margin-top: 30px;
+.skills-header{
+  color: var(--primary-color);
 }
 
 .page-header img:hover,
@@ -497,6 +496,52 @@ table.skills-table td {
 }
 
 .skills-table {
+  display: table;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media all and (max-width: 500px) {
+  .grid {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+
+  .contact-map{
+    width: auto;
+    height: auto;
+  }
+
+  .address-field {
+    font-size: 16px;
+  }
+}
+
+@media all and (min-width: 500px) and (max-width: 750px) {
+  .grid {
+    -ms-grid-columns: 1fr 20px 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .contact-map{
+    width: auto;
+    height: auto;
+  }
+}
+
+@media all and (max-width: 750px) {
+  .grid {
+    grid-gap: 10px;
+  }
+
+  .grid__item:last-child {
+    grid-column: auto / auto;
+    grid-row: auto / auto;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+
 }
